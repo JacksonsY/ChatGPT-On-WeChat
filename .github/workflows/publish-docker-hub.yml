@@ -1,12 +1,7 @@
 name: Publish Docker image
 
 on:
-  # Test pub with dev tag
-  push:
-    branches:
-      - ci/fix-muti-platform
-  release:
-    types: [published]
+  workflow_dispatch:
 
 jobs:
   push_to_registry:
